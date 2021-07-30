@@ -1,1 +1,120 @@
-style.css
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  padding: 2.5rem 1.5rem;
+}
+
+nav li + li {
+  margin-top: 1rem;
+}
+
+nav li:last-child {
+  border: 1px solid #ffffff;
+  margin-top: 1rem;
+  padding: 0.4rem 0;
+}
+.nav-container {
+  padding: 1.25rem 11.46%;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+nav ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-left: 1.56rem;
+}
+
+nav li:last-child a {
+  color: #dbe9ff;
+  border: 1px solid var(--very-dark-violet);
+  padding: 0.75rem 1.78rem;
+}
+
+li:hover:last-child a {
+  color: #dbe9ff;
+  background: var(--dark-violet);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 2 / 3;
+}
+.five {
+  grid-column: 1 / 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+footer {
+  padding: 5.5rem 2rem;
+  background-color: var(--very-light-gray);
+  background-repeat: no-repeat;
+}
+.footer-columns a {
+  display: block;
+  color: var(--dark-violet);
+  margin: 1rem 0;
+}
+
+.column a:first-child {
+  color: var(--dark-grayish-violet);
+  margin: 2rem 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer {
+  padding: 2rem 0rem;
+}
+
+.footer-head {
+  display: flex;
+  align-items: center;
+  margin: 0 11.46%;
+}
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 11.46%;
+  text-align: left;
+}
