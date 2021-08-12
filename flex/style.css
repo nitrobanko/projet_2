@@ -1,0 +1,56 @@
+.flex {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.flex2 {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  width: 100px;
+  border: solid 1px;
+}
+
+.flex2 div {
+  width: 100px;
+  border: solid 1px;
+}
+
+.popular {
+  display: flex;
+  width: 100px;
+  float: right;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.popular div {
+  width: 100px;
+  border: solid 1px;
+}
+
+.activite {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.activite div {
+  width: 100px;
+  border: solid 1px;
+}
+
+.activite :nth-last-child(3) {
+  height: 100px;
+}
+
+.activite :nth-last-child(1) {
+  height: 100px;
+}
