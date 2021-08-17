@@ -159,7 +159,9 @@ header {
 }
 
 section {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 body {
   line-height: 1;
@@ -297,7 +299,6 @@ li a {
   display: inline-block;
   height: 60px;
   width: 60px;
-  float: left;
   margin: 0 5px;
   overflow: hidden;
   background: #fff;
@@ -307,7 +308,7 @@ li a {
   transition: all 0.3s ease-out;
   color: #0065fc;
 }
-.wrapper .button:hover {
+.wrapper .button {
   width: 200px;
 }
 .wrapper .button .icon {
@@ -343,11 +344,6 @@ li a {
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
 }
-nput[type="search" i] {
-  appearance: auto;
-  box-sizing: border-box;
-  padding: 1px 2px;
-}
 
 .searchbox {
   margin: 15px 0 31px;
@@ -381,15 +377,32 @@ nput[type="search" i] {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
-.articles-container {
+.section .id {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
 }
 
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.articles-container {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: wrap;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+  width: 40%;
+}
 /*
   background-color: white;
   padding: 0.375rem;
