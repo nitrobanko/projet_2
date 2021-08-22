@@ -162,7 +162,6 @@ section {
   display: flex;
   flex-direction: column;
   max-width: 1350px;
-  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -402,7 +401,7 @@ li a {
 }
 
 .container {
-  background-color: #f2f2f25d;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -438,10 +437,12 @@ li a {
 .name_hebergment {
   padding-top: 11px;
   padding-bottom: 11px;
+  color: #000;
 }
 
 .content_price {
   padding-bottom: 11px;
+  color: #000;
 }
 .stars {
   padding-bottom: 11px;
@@ -455,12 +456,8 @@ li a {
   padding: 45px 38px 31px 45px;
   max-width: 345px;
 }
-.hebergment {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 56px;
+#hebergment {
+  width: 65%;
 }
 
 .hebergment_marseille {
@@ -520,4 +517,16 @@ li a {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+#cote {
+  display: flex;
+  flex-direction: row;
+}
+
+.content_price {
+  color: #000;
+}
+.popular_title_containt {
+  color: #000;
 }
