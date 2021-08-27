@@ -540,11 +540,12 @@ li a :hover {
 }
 .popular_title_containt {
   color: #000;
+  align-items: center;
 }
 
 #activity {
   background-color: white;
-
+  height: 500px;
   margin-bottom: 60px;
   max-width: 1350px;
 }
@@ -555,15 +556,31 @@ li a :hover {
 }
 
 .activity1 {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
   box-shadow: 0 0 20px #0000002e;
-  align-items: baseline;
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 70%;
+  width: 25%;
 }
 
+.activity1 img,
+.activity4 img {
+  height: 464px;
+  object-fit: cover;
+  width: 100%;
+}
+.activity2 img,
+.activity3 img,
+.activity5 img,
+.activity6 img {
+  height: 204px;
+  object-fit: cover;
+  width: 100%;
+}
 .activity2,
 .activity3,
 .activity5,
@@ -577,6 +594,7 @@ li a :hover {
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
   width: 80%;
+  height: 240px;
 }
 
 .activity_picture {
@@ -589,6 +607,7 @@ li a :hover {
 .activity2_3 {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 .activity4 {
@@ -596,14 +615,19 @@ li a :hover {
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 80%;
+  width: 25%;
 }
 
 .activity5_6 {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 .fas.fa-star.grey-star {
   color: rgb(218, 216, 216);
+}
+
+.search-input__submit-icon {
+  opacity: 0;
 }
