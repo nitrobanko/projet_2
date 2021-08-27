@@ -255,6 +255,11 @@ li {
   margin-left: 1.56rem;
 }
 
+.filter {
+  align-self: flex-start;
+  margin: 0px 0px 20px 30px;
+}
+
 footer {
   padding: 50px;
   position: relative;
@@ -308,6 +313,10 @@ li a :hover {
   text-decoration: overline;
 
   margin-right: 1rem;
+}
+
+.wrapper {
+  display: flex;
 }
 .wrapper .button {
   display: inline-block;
@@ -546,6 +555,7 @@ li a :hover {
 }
 
 .activity1 {
+  display: block;
   box-shadow: 0 0 20px #0000002e;
   align-items: baseline;
   padding: 0px 0px 20px 0px;
