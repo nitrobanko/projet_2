@@ -104,7 +104,7 @@ menu,
 nav,
 h1 {
   font-family: Raleway;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
@@ -242,7 +242,7 @@ nav a {
 
 nav a:hover {
   color: var(--cta-cyan);
-  border-bottom: 1px solid var(--cta-cyan);
+
   transform: scale(1.25);
 }
 
@@ -304,13 +304,15 @@ h1 a {
   color: black;
 }
 
-li a {
+li a :hover {
   text-decoration: overline;
+
+  margin-right: 1rem;
 }
 .wrapper .button {
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  padding-right: 12px;
   margin: 0 5px;
   overflow: hidden;
   background: #fff;
@@ -320,17 +322,15 @@ li a {
   transition: all 0.3s ease-out;
   color: #0065fc;
 }
-.wrapper .button {
-  width: 200px;
-}
+
 .wrapper .button .icon {
   display: inline-block;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   text-align: center;
-  border-radius: 50px;
+  border-radius: 50%;
   box-sizing: border-box;
-  line-height: 60px;
+  line-height: 40px;
   transition: all 0.3s ease-out;
   background-color: #deebff;
 }
@@ -485,8 +485,10 @@ li a {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  padding: 45px 38px 31px 45px;
+  padding: 40px 38px 31px 45px;
   max-width: 345px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .popular_title {
@@ -533,23 +535,29 @@ li a {
 
 #activity {
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   margin-bottom: 60px;
   max-width: 1350px;
 }
 
+.activities {
+  display: flex;
+  flex-direction: row;
+}
+
 .activity1 {
   box-shadow: 0 0 20px #0000002e;
+  align-items: baseline;
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 28%;
+  width: 70%;
 }
 
 .activity2,
-.activity3 {
+.activity3,
+.activity5,
+.activity6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -558,7 +566,7 @@ li a {
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 18%;
+  width: 80%;
 }
 
 .activity_picture {
@@ -571,4 +579,21 @@ li a {
 .activity2_3 {
   display: flex;
   flex-direction: column;
+}
+
+.activity4 {
+  box-shadow: 0 0 20px #0000002e;
+  padding: 0px 0px 20px 0px;
+  border-radius: 20px;
+  margin: 0px 0px 20px 0px;
+  width: 80%;
+}
+
+.activity5_6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.fas.fa-star.grey-star {
+  color: rgb(218, 216, 216);
 }
