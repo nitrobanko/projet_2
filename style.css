@@ -552,6 +552,7 @@ h1 a {
 #cote {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .content_price {
@@ -567,10 +568,16 @@ h1 a {
   margin-bottom: 20px;
 }
 
+.popular_title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 #activity {
   background-color: white;
   height: 500px;
-  margin-bottom: 140px;
+  margin-bottom: 180px;
   width: calc(100% - 80px);
   margin-left: 40px;
   margin-right: 40px;
