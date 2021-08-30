@@ -116,8 +116,18 @@ h3 {
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  line-height: 15.4px;
+  line-height: 25.4px;
 }
+
+.wrapper h3 {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 40.4px;
+}
+
 p {
   font-family: Raleway;
   font-size: 14px;
@@ -176,13 +186,7 @@ blockquote,
 q {
   quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -210,19 +214,33 @@ ul {
   border-bottom-left-radius: 10px;
 }
 
+.fas .fa-chart-line .chart-line-black {
+  display: flex;
+  justify-content: right;
+  width: 3555px;
+}
+
 ul {
   list-style: none;
 }
 
-nav ul {
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: row;
+  padding: 2rem;
+}
+nav ul :hover {
   padding: 2.5rem 1.5rem;
+  border-top: 2px solid rgb(17, 71, 221);
 }
 
 nav li + li {
   margin-top: 1rem;
 }
 
-nav li:last-child {
+nav li {
   border: 1px solid #ffffff;
   margin-top: 1rem;
   padding: 0.4rem 0;
@@ -235,9 +253,8 @@ nav li:last-child {
 }
 
 nav a {
-  display: inline-block;
   padding-bottom: 0.1rem;
-  transition: all 1000ms cubic-bezier(1, -1.43, 0.18, 1.95);
+  transition: all 10ms cubic-bezier(1, -1.43, 0.18, 1.95);
 }
 
 nav a:hover {
@@ -257,7 +274,15 @@ li {
 
 .filter {
   align-self: flex-start;
-  margin: 0px 0px 20px 30px;
+  margin: 0px 0px 60px 30px;
+}
+
+.nombre_logements {
+  margin: 0px 0px 35px 17px;
+}
+
+.fas .fa-info-circle {
+  color: #dedfff;
 }
 
 footer {
@@ -272,7 +297,7 @@ footer {
   margin: 1rem 0;
 }
 
-.column a:first-child {
+.column a {
   color: var(--dark-grayish-violet);
   margin: 2rem 0;
 }
@@ -307,12 +332,6 @@ a {
 
 h1 a {
   color: black;
-}
-
-li a :hover {
-  text-decoration: overline;
-
-  margin-right: 1rem;
 }
 
 .wrapper {
@@ -404,12 +423,10 @@ li a :hover {
 }
 
 .title_content {
-  margin: 0px;
   font-size: large;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
-
-.container {
+#hebergment_marseille {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -457,14 +474,6 @@ li a :hover {
   padding-bottom: 11px;
 }
 
-.popular {
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
-  padding: 45px 38px 31px 45px;
-  max-width: 345px;
-}
 #hebergment {
   width: 65%;
 }
@@ -485,7 +494,17 @@ li a :hover {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.plus {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
 }
 
 /*popular */
@@ -496,7 +515,7 @@ li a :hover {
   border-radius: 20px;
   padding: 40px 38px 31px 45px;
   max-width: 345px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 60px;
 }
 
@@ -543,16 +562,24 @@ li a :hover {
   align-items: center;
 }
 
+.activity-title {
+  font-size: large;
+  margin-bottom: 20px;
+}
+
 #activity {
   background-color: white;
   height: 500px;
-  margin-bottom: 60px;
-  max-width: 1350px;
+  margin-bottom: 140px;
+  width: calc(100% - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .activities {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .activity1 {
@@ -564,12 +591,12 @@ li a :hover {
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 25%;
+  width: 23%;
 }
 
 .activity1 img,
 .activity4 img {
-  height: 464px;
+  height: 484px;
   object-fit: cover;
   width: 100%;
 }
@@ -586,14 +613,14 @@ li a :hover {
 .activity5,
 .activity6 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
   box-shadow: 0 0 20px #0000002e;
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 80%;
+  width: 100%;
   height: 240px;
 }
 
@@ -607,7 +634,7 @@ li a :hover {
 .activity2_3 {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 23%;
 }
 
 .activity4 {
@@ -615,13 +642,13 @@ li a :hover {
   padding: 0px 0px 20px 0px;
   border-radius: 20px;
   margin: 0px 0px 20px 0px;
-  width: 25%;
+  width: 23%;
 }
 
 .activity5_6 {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 23%;
 }
 
 .fas.fa-star.grey-star {
