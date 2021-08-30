@@ -231,8 +231,7 @@ nav {
   flex-direction: row;
   padding: 2rem;
 }
-nav ul :hover {
-  padding: 2.5rem 1.5rem;
+nav li:hover {
   border-top: 2px solid rgb(17, 71, 221);
 }
 
@@ -243,7 +242,7 @@ nav li + li {
 nav li {
   border: 1px solid #ffffff;
   margin-top: 1rem;
-  padding: 0.4rem 0;
+  padding: 2.5rem 1.5rem;
 }
 .nav-container {
   padding: 1.25rem 11.46%;
@@ -259,8 +258,6 @@ nav a {
 
 nav a:hover {
   color: var(--cta-cyan);
-
-  transform: scale(1.25);
 }
 
 nav ul {
