@@ -339,7 +339,7 @@ h1 a {
   height: 40px;
   padding-right: 12px;
   margin: 0 5px;
-  overflow: hidden;
+  overflow: visible;
   background: #fff;
   border-radius: 50px;
   cursor: pointer;
@@ -661,4 +661,133 @@ h1 a {
 
 .search-input__submit-icon {
   opacity: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    padding: 80px 20px;
+  }
+  header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  nav li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .headsign {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  #cote {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .search-input__submit-icon {
+    opacity: 3;
+  }
+
+  .search-input__submit-text {
+    opacity: 0;
+  }
+
+  .wrapper .button {
+    display: flex;
+    /* flex-direction: column; */
+    height: 40px;
+    padding-right: 12px;
+    margin: 0 5px;
+    overflow: visible;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease-out;
+    color: #0065fc;
+  }
+
+  .searchbox button[type="submit"] {
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    width: 70px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .positionSearch {
+    background-color: #f2f2f2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    width: 20px;
+  }
+
+  nav li:hover {
+    border-bottom: 2px solid rgb(17, 71, 221);
+    border-top: hidden;
+  }
+
+  #hebergment {
+    width: 100%;
+  }
+  #hebergment_marseille {
+    display: flex;
+    flex-direction: column;
+    place-content: space-between;
+    background-color: white;
+  }
+
+  body {
+    font-family: "Raleway", "Sans serif";
+    width: auto;
+  }
+
+  .popular {
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 480px;
+  }
+  .activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 11.46%;
+    text-align: left;
+  }
 }
