@@ -682,6 +682,19 @@ h1 a {
     padding: 1rem;
   }
 
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 2rem;
+    width: 40%;
+  }
+
+  .navbar {
+    width: 40%;
+  }
+
   nav li {
     display: flex;
     justify-content: space-between;
@@ -695,11 +708,14 @@ h1 a {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 12rem;
   }
 
   .logo {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 17rem;
+    width: 10%;
   }
 
   nav ul {
