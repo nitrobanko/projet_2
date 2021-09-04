@@ -818,6 +818,7 @@ main {
     background-color: #0065fc;
     color: white;
     cursor: pointer;
+    width: 4rem;
     border-radius: 17px 17px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
@@ -827,6 +828,9 @@ main {
     border-radius: 1rem 0 0 1rem;
     text-align: center;
     width: 20px;
+  }
+  .info {
+    margin-bottom: 3%;
   }
 
   nav li:hover {
