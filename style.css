@@ -107,7 +107,7 @@ h1 {
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
+
   line-height: 26.4px;
 }
 h3 {
@@ -205,6 +205,10 @@ ul {
   padding-right: 5px;
 }
 
+.holyday {
+  font-weight: 700;
+}
+
 .img_pop {
   width: 132px;
   height: 132px;
@@ -284,14 +288,25 @@ li {
 
 .nombre_logements {
   margin: 0px 0px 35px 17px;
+  margin: auto;
 }
 
-.fas .fa-info-circle {
-  color: #dedfff;
+.info {
+  color: royalblue;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: solid #f2f2f2;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+  background-color: #fff;
+  margin-right: 1%;
 }
 
 footer {
-  padding: 50px;
   position: relative;
   background-color: #f2f2f2ad;
   border-color: #f2f2f25d;
@@ -305,6 +320,13 @@ footer {
 .column a {
   color: var(--dark-grayish-violet);
   margin: 2rem 0;
+}
+
+.column {
+  font-size: smaller;
+}
+.column_title {
+  font-weight: bolder;
 }
 
 .footer {
@@ -354,7 +376,7 @@ h1 a {
   background: #fff;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border: solid #f2f2f2;
   transition: all 0.3s ease-out;
   color: #0065fc;
 }
@@ -425,6 +447,10 @@ h1 a {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+.searchResultWrapiconIcon {
+  color: #0065fc;
+}
+
 .box {
   display: flex;
   justify-content: space-between;
@@ -443,6 +469,7 @@ h1 a {
   border-radius: 20px;
   padding: 44px 36px 44px 36px;
   max-width: 805px;
+  margin-bottom: 8%;
 }
 
 .box_card {
@@ -483,7 +510,7 @@ h1 a {
 }
 
 #hebergment {
-  width: 65%;
+  width: 67%;
 }
 
 .hebergment_marseille {
@@ -495,6 +522,7 @@ h1 a {
   border-radius: 20px;
   padding: 44px 36px 44px 36px;
   max-width: 805px;
+  margin-bottom: 8%;
 }
 .container {
   display: flex;
@@ -533,6 +561,7 @@ h1 a {
 }
 
 .popular_hebergment {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -597,6 +626,18 @@ h1 a {
   justify-content: space-between;
 }
 
+.activity_theme {
+  display: flex;
+  justify-content: center;
+}
+
+.popular_hebergment_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8%;
+}
+
 .activity1 {
   display: flex;
   flex-direction: column;
@@ -628,6 +669,7 @@ h1 a {
 .activity5,
 .activity6 {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -672,6 +714,14 @@ h1 a {
 
 .search-input__submit-icon {
   opacity: 0;
+}
+
+main {
+  margin-left: 3%;
+}
+
+.column_end {
+  font-size: small;
 }
 
 @media screen and (max-width: 1024px) {
